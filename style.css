@@ -1,0 +1,132 @@
+body {
+  background: url("sfondo.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.bottone{
+	background-color: green;
+	width: 100px;
+}
+
+.pesce1 {
+  left: -30%;
+  top: 110%;
+  animation: animPesce2 8s linear infinite 3s;
+  
+  height: 100px;
+  position: absolute;
+}
+
+.pesce2 {
+  top: 66%;
+  left: -10%;
+  transform: translateY(-50%);
+  animation: animPesce1 6s linear infinite 3s;
+  
+  height: 100px;
+  position: absolute;
+}
+
+.pesce3 {
+  position: absolute;
+  height: 65px;
+  top: 3%;
+  left: -10%;
+  animation: animPesce1 7s linear infinite 3s;
+  
+  height: 100px;
+  position: absolute;
+}
+
+.pesce4 {
+  top: 33%;
+  left: -10%;
+  transform: translateY(-50%);
+  animation: animPesce1 6s linear infinite;
+  
+  height: 100px;
+  position: absolute;
+}
+
+
+
+
+
+@keyframes animPesce1 {
+  0% {
+    left: -10%;
+  }
+  30%{
+	left:15%
+  }
+  60%{
+	left:50%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes animPesce2 {
+  0% {
+    left: -30%;
+    top: 110%;
+  }
+  100% {
+    left: 110%;
+    top: -30%;
+  }
+}
+
+
+
+
+
+
+
+
+.bolla1 {
+  height: 50px;
+  position: absolute;
+  top: 110%;
+  transform: translateX(-50%);
+  
+  left: 16%;
+  animation: animBolla 7s linear infinite 2s;
+}
+.bolla2 {
+  height: 50px;
+  position: absolute;
+  top: 110%;
+  transform: translateX(-50%);
+  
+  left: 48%;
+  animation: animBolla 7s linear infinite 8s;
+}
+.bolla3 {
+  height: 50px;
+  position: absolute;
+  top: 110%;
+  transform: translateX(-50%);
+  
+  left: 80%;
+  animation: animBolla 7s linear infinite 5s;
+}
+
+@keyframes animBolla {
+  0% {
+    top: 140%;
+  }
+  75% {
+	  top: 35%;
+    opacity: 1;
+  }
+  100% {
+    top: 20%;
+    opacity: 0;
+  }
+}
